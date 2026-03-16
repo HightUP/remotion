@@ -32,6 +32,7 @@ import {Framer} from './Framer';
 import {FreezeExample} from './Freeze/FreezeExample';
 import {FreezePortion} from './FreezePortion/FreezePortion';
 import {Green} from './Green';
+import {HelloCodex} from './HelloCodex';
 import {HlsDemo} from './Hls/HlsDemo';
 import {HugeImage} from './HugeImage';
 import {HugePayload, hugePayloadSchema} from './HugePayload';
@@ -97,6 +98,7 @@ import {CustomTransition} from './Transitions/CustomTransition';
 import {VideoOnCanvas} from './VideoOnCanvas';
 import {Greenscreen} from './VideoOnCanvas/greenscreen';
 import {VideoParser} from './VideoParser';
+import {VideoSimples} from './VideoSimples';
 import {VideoSpeed} from './VideoSpeed';
 import {VideoTesting} from './VideoTesting';
 import {WarpDemoOuter} from './WarpText';
@@ -1900,6 +1902,22 @@ export const Index: React.FC = () => {
 				height={720}
 				fps={30}
 				durationInFrames={2 * 60 * 30}
+			/>
+			<Composition
+				id="hello-codex"
+				component={HelloCodex}
+				width={1080}
+				height={1080}
+				fps={30}
+				durationInFrames={150}
+			/>
+			<Composition
+				id="video-simples"
+				component={VideoSimples}
+				width={1080}
+				height={1920}
+				fps={30}
+				durationInFrames={150}
 			/>
 		</>
 	);
